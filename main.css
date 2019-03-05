@@ -9,7 +9,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 
-
 ul {
   display: inline;
   list-style: none;
@@ -79,10 +78,24 @@ header img{
     float: right;
 }
 
+h1{
+    color:#2d5152;
+    font-weight: bold;
+    padding-left: 10%;
+    padding-top: 5%;
+}
 
+.about-pg{
+    font-size: 16px;
+    display: block;
+    margin: auto;
+    padding-top: 2%;
+    width: 80%;
+}
 
 main p{
     padding-top: 2%;
+    
 }
 
 #main-button{
@@ -90,7 +103,7 @@ main p{
     padding: 1%;
     margin: auto;
     display: block;
-    font-size: 24px;
+    font-size: 16px;
     color: #000000;
 }
 
