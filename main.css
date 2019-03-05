@@ -8,22 +8,14 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
     display:block;
 }
 
-
-nav ul {
-  display: inline;
-  list-style: none;
-}
-
-nav ul li {
-  display: inline;
-  cursor: pointer;
-  padding: 20px;
-  margin-left: -5px;
-}
-
 ul{
-    padding-left: 5%;
-    font-size: 1em;
+    padding:2% 0 2% 5%;
+    font-size: 1.5em;
+}
+
+ul li{
+    width: 95%;
+    margin-left: 7%;
 }
 
 body{
@@ -36,10 +28,11 @@ nav{
     padding: 2%;
 }
 
-nav li {
+nav ul li {
     display: inline;
     padding: 2%;   
     font-weight: bold;
+    font-size: 0.8em;
 }
 
 nav li a {
@@ -69,7 +62,7 @@ header img{
     background-color: #e5d5df;
     padding: 5%;
     margin: 5%;
-    width: 50%;
+    width: 95%;
     margin: auto;
     margin:5% auto 5% auto;
 
@@ -92,8 +85,8 @@ h1{
 
 h2{
     color: #a0c6ce;
-    padding-left: 2%;
-    padding-top: 2%;
+    padding-left: 5%;
+    padding-top: 3%;
 }
 
 .about-pg{
@@ -107,6 +100,10 @@ h2{
     font-size: 24px;
 }
 
+.about-pg{
+    padding-top: 5%;
+}
+
 main{
     padding-bottom: 2%;
 }
@@ -116,7 +113,8 @@ main p{
     padding-left: 2%;
     font-weight: bold;
     font-size: 1.5em;
-    
+    width: 90%;
+    margin: auto; 
 }
 
 #main-button{
@@ -124,14 +122,15 @@ main p{
     padding: 1%;
     margin: auto;
     display: block;
-    font-size: 24px;
+    font-size: 1em;
     color: #000000;
     font-weight: bold;
+    text-align: left;
     
 }
 
 #main-button p{
-    text-align: left;
+    margin-top:2%; 
 }
 
 #cta{
@@ -141,14 +140,15 @@ main p{
     margin: auto;
     background-color: #2d5152;
     color: #e4e4e4;
-    width:25%;
+    width:50%;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .h1-button{
     background-color: #e5d5df;
-    padding: 2%;
-    width: 15%;
-    margin-top: 2%;
+    padding: 3%;
+    margin-top: 5%;
     margin-bottom: 2%;
     color: #2d5152;
     font-weight: bold;
@@ -168,7 +168,7 @@ main p{
     
 }
 
-img{
+main img{
     width: 70%;
     margin: auto;
     display: block;
@@ -180,7 +180,15 @@ footer{
     padding: 3%;
     color: #e4e4e4;
     text-align: center;
+    width: 100%;
 }
+
+footer p{
+    width: 90%;
+    margin: auto;
+    padding: 2% 0 2% 0;
+}
+
 
 
 
