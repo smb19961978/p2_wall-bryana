@@ -152,6 +152,18 @@ main p{
     text-align: left;
 }
 
+#support{
+    background-color: #a0c6ce;
+    padding: 2%; 
+    color:#2d5152;
+    font-weight: bold;
+    margin: 2% auto 2% auto;
+    display: block;
+    border-radius: 8px; 
+    font-size: 1em;
+    
+}
+
 img{
     width: 70%;
     margin: auto;
