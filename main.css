@@ -9,18 +9,22 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 
-ul {
+nav ul {
   display: inline;
   list-style: none;
 }
 
-li {
+nav ul li {
   display: inline;
   cursor: pointer;
   padding: 20px;
   margin-left: -5px;
 }
 
+ul{
+    padding-left: 5%;
+    font-size: 1em;
+}
 
 body{
     font-family: "Lato", sans-serif;
@@ -52,7 +56,7 @@ nav li a:hover{
 header p{
     background-color: #e5d5df;
     padding: 8%;
-    font-size: 64px; 
+    font-size: 4em; 
     text-align: center;
     font-weight: bold;
 }
