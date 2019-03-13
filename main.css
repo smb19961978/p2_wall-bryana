@@ -58,6 +58,23 @@ header img{
     width: 100%;
 }
 
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
 #index{
     background-color: #e5d5df;
     padding: 5%;
@@ -189,6 +206,11 @@ footer p{
     padding: 2% 0 2% 0;
 }
 
+@media (min-width:700px){
+    #cta{
+        width: 15%;
+    }
+}
 
 
 
