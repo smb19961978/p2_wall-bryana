@@ -34,15 +34,53 @@ xmlhttp.onreadystatechange = function() {
         
         console.log(apiResult);
         
-        function showMessage(){
+        /*function showMessage(){
             apiResult.sort(function(a,b){return 0.5 - Math.random()});
             var randomMessageParagraph = document.createElement ('p');
             words.appendChild(randomMessageParagraph);
             var randomeMessageText = document.createTextNode(apiResult[0].word);
-            randomMessageParagraph.appendChild(randomeMessageText);
-        }
+            randomMessageParagraph.appendChild(randomeMessageText);*/
+            
+            
+        var adjective = document.createTextNode(apiResult.word);
+        
+        words[0].appendChild(adjective);
+        
+        console.log(adjective);
+        
 
     }
 };
 xmlhttp.open('GET', 'https://api.datamuse.com/words?rel_syn=impressive', true);
 xmlhttp.send();
+
+//hamburger menu//
+
+$( document ).ready(function() {
+
+$( ".cross" ).hide();
+$( ".menu" ).hide();
+$( ".hamburger" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".hamburger" ).hide();
+$( ".cross" ).show();
+});
+});
+
+$( ".cross" ).click(function() {
+$( ".menu" ).slideToggle( "slow", function() {
+$( ".cross" ).hide();
+$( ".hamburger" ).show();
+});
+});
+
+});
+
+
+
+
+
+
+ 
+        
+        

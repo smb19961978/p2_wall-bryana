@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" type="text/css" href="main.css">
     <title>The Centre for Girls</title>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   <body>
+      
+    <button class="hamburger">&#9776;</button>
+  	<button class="cross">&#735;</button>
       
     <header> 
     <nav id="navbar">
@@ -16,10 +21,19 @@
             <li><a href="getinvolved.html">Get Involved</a></li>
         
         </ul>
-        
-        <img id class="logo" src="photos/logo.png" alt="The Centre for Girls Logo" title="The Centre for Girls Logo">
-      
+              
     </nav>
+        
+    <nav class="menu">
+
+			<ul>
+
+				<li><a href="index.html">Home</a></li>
+                <li><a href="program.html">Programs</a></li>
+                <li><a href="getinvolved.html">Get Involved</a></li>
+			</ul>
+			
+		</nav>
         
         <p>Girls are <span></span></p>
         
@@ -43,11 +57,44 @@
           <p class="pink-bg">The Centre for Girls and its partners strategically increase girls’ access to services and provide them with a safe place to spend time, learn skills, make friends, and interact with caring adults. </p>
           
           <p class="pink-bg">Are you looking for an after-school program that stimulates your child’s interests? Builds her confidence and self-esteem?</p>
+              
+                        
+            <p class="pink-bg" ><button id="cta">Join Now</button></p>
+      
+            
           
-          <p class="pink-bg" ><button id="cta">Join Now</button></p>
+          
               
         </button>
-      
+          
+          <!--form-->
+          
+          
+          
+          <div class="container">
+            <form action="action_page.php">
+
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
       </main>
       
       
