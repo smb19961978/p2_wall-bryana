@@ -4,7 +4,7 @@
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementsByClassName("navbar");
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -42,7 +42,7 @@ xmlhttp.onreadystatechange = function() {
             randomMessageParagraph.appendChild(randomeMessageText);*/
             
             
-        var adjective = document.createTextNode(apiResult.word);
+        var adjective = document.createTextNode(apiResult[0].word);
         
         words[0].appendChild(adjective);
         
@@ -75,6 +75,28 @@ $( ".hamburger" ).show();
 });
 
 });
+
+//contact form open/close
+
+//if i click the #cross2 the contact form goes on visibility hidden
+var form = document.getElementsByTagName("button")[1];
+
+form.addEventListener("click", function(){
+    this.classList.remove("")
+    
+});
+
+
+//if I click on button[1] form appears
+
+var cross = document.getElementById("cross2");
+
+cross.addEventListener("click", function(){
+    this.classList.remove(".container");   
+});
+
+
+
 
 
 
