@@ -20,12 +20,15 @@ ul li{
 
 body{
     font-family: "Lato", sans-serif;
+    
 }
 
 nav{
     background-color: #2d5152;
     font-size: 1em; 
     padding: 2%;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 nav ul li {
@@ -89,7 +92,7 @@ div .container{
     background-color: #e5d5df;
     padding: 5%;
     margin: 5%;
-    width: 95%;
+    width: 85%;
     margin: auto;
     margin:5% auto 5% auto;
 
@@ -207,7 +210,7 @@ footer{
     padding: 3%;
     color: #e4e4e4;
     text-align: center;
-    width: 100%;
+    max-width: 100%;
 }
 
 footer p{
@@ -321,7 +324,14 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
-  display: none;
+}
+
+.hidden{
+    display: none;
+}
+
+header span p{
+    font-size: 1.2em !important;
 }
 
 

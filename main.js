@@ -1,15 +1,18 @@
+
 //sticky nav code
 
 // When the user scrolls the page, execute myFunction 
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementsByClassName("navbar");
+var navbar = document.getElementsByClassName("navbar")[0];
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
@@ -21,7 +24,7 @@ function myFunction() {
 
 //api code
 
-var words = document.querySelectorAll("span");
+
 
 
 
@@ -32,27 +35,36 @@ xmlhttp.onreadystatechange = function() {
 
         //Code Dealing With The API Data Goes Here
         
-        console.log(apiResult);
+        var words = document.querySelectorAll("span")[0];
         
-        /*function showMessage(){
+        function showMessage(){
             apiResult.sort(function(a,b){return 0.5 - Math.random()});
             var randomMessageParagraph = document.createElement ('p');
             words.appendChild(randomMessageParagraph);
             var randomeMessageText = document.createTextNode(apiResult[0].word);
-            randomMessageParagraph.appendChild(randomeMessageText);*/
+            randomMessageParagraph.appendChild(randomeMessageText);
             
             
-        var adjective = document.createTextNode(apiResult[0].word);
+            
+            
+            console.log(apiResult);
         
-        words[0].appendChild(adjective);
+       // words[0].appendChild(adjective);
         
-        console.log(adjective);
+       
         
 
     }
+        showMessage();
+};
 };
 xmlhttp.open('GET', 'https://api.datamuse.com/words?rel_syn=impressive', true);
 xmlhttp.send();
+
+
+
+
+
 
 //hamburger menu//
 
@@ -78,13 +90,16 @@ $( ".hamburger" ).show();
 
 //contact form open/close
 
-//if i click the #cross2 the contact form goes on visibility hidden
-var form = document.getElementsByTagName("button")[1];
+//if i click the #cross2 the contact form goes on visibility hidden 
+var button = document.getElementsByTagName("button")[2];
 
-form.addEventListener("click", function(){
-    this.classList.remove("")
+var form = document.getElementsByClassName("container")[0];
+
+button.addEventListener("click", function(){
+    form.classList.remove("hidden");
     
 });
+
 
 
 //if I click on button[1] form appears
@@ -92,7 +107,7 @@ form.addEventListener("click", function(){
 var cross = document.getElementById("cross2");
 
 cross.addEventListener("click", function(){
-    this.classList.remove(".container");   
+    form.classList.add("hidden");   
 });
 
 
