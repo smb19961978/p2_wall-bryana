@@ -198,6 +198,12 @@ main p{
     
 }
 
+#support a{
+    list-style-type: none;
+    text-decoration: none;
+    color:#2d5152;
+}
+
 main img{
     width: 70%;
     margin: auto;
