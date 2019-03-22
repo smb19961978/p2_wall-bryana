@@ -1,5 +1,7 @@
 # p2_wall-bryana
 
+One issue that I'm still having is that there are two errors in the console but everything seems to be working fine so I don't know what's wrong. 
+
 Here are the resources I used to aid in this project. 
 
 https://www.w3schools.com/jsref/prop_style_display.asp
