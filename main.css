@@ -57,7 +57,7 @@ nav li a:hover{
 
 header p{
     background-color: #e5d5df;
-    padding: 8%;
+    padding: 2%;
     font-size: 4em; 
     text-align: center;
     font-weight: bold;
@@ -332,6 +332,7 @@ input[type=submit]:hover {
 
 header span p{
     font-size: 1.2em !important;
+    
 }
 
 
