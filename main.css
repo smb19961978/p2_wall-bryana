@@ -21,6 +21,7 @@ ul li{
 body{
     font-family: "Lato", sans-serif;
     
+    
 }
 
 nav{
@@ -71,6 +72,10 @@ div .container{
     background-color: #2d5152;
 }
 
+#header-text{
+    padding-top: 10%;
+}
+
 /* Page content */
 .content {
   padding: 16px;
@@ -117,6 +122,7 @@ h2{
     color: #a0c6ce;
     padding-left: 5%;
     padding-top: 3%;
+    padding-bottom: 3%;
 }
 
 .about-pg{
@@ -171,6 +177,7 @@ main p{
     background-color: #2d5152;
     color: #e4e4e4;
     width:50%;
+    min-width: 150px;
     font-size: 1em;
     font-weight: bold;
 }
@@ -178,7 +185,7 @@ main p{
 .h1-button{
     background-color: #e5d5df;
     padding: 3%;
-    margin-top: 5%;
+    margin-top: 10%;
     margin-bottom: 2%;
     color: #2d5152;
     font-weight: bold;
@@ -330,6 +337,8 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  margin-top: 10%;
+  transition-duration: 3s;
 }
 
 .hidden{
